@@ -1,0 +1,17 @@
+{
+  "name": "rot13-cipher",
+  "version": "0.1.0",
+  "description": "Applies a letter replacement cipher shifting each character by 13 positions to obfuscate or reveal text.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
