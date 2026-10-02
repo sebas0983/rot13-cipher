@@ -23,3 +23,10 @@ The trade-off: only the 52 ASCII letters `A–Z` and `a–z` are shifted. Everyt
 ## Exports
 
 - `rot13(input: string): string` — the single function this library provides.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
